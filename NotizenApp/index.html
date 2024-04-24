@@ -7,8 +7,13 @@
     <title>Vite App</title>
   </head>
   <body>
-    <h1>MAL SCHAUEN OB DAS AUCH GEHT</h1>
-    <div id="app"></div>
+      <form id="aufgabenForm">
+        <h1>ToDo-Liste</h1>
+        <input type="text" id="aufgabenTitel" placeholder="Titel">
+        <input type="text" id="aufgabenBeschreibung" placeholder="Aufgabe">
+        <button type="submit">Hinzufügen</button>
+      </form>
+      <ul id="aufgabenListe">Aufgabenliste</ul>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
