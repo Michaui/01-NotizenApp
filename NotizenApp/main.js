@@ -22,8 +22,7 @@ class ToDoList {
     this.aufgabenForm.addEventListener('submit', (event) => {
       event.preventDefault(); //Verhindert, dass die Seite neu geladen wird. 
       /* this.hinzufuegenAufgabe weil Methode Teil der Klasse ist */
-      //this.hinzufuegenAufgabe(aufgabenTitel.value, aufgabenBeschreibung.value); 
-      this.hinzufuegenAufgabe({ aufgabenTitel: this.aufgabenTitel, aufgabenBeschreibung: this.aufgabenBeschreibung }); 
+      this.hinzufuegenAufgabe(aufgabenTitel.value, aufgabenBeschreibung.value); 
       this.aufgabenTitel.value = ''; 
       this.aufgabenBeschreibung.value = ''; 
       console.log("Test1");
@@ -36,7 +35,7 @@ class ToDoList {
     const notiz = {titel, beschreibung, isAbgeschlossen: false};
     this.aufgabe.push(notiz);
     //aktualisiereListe Methode definieren und Eingafeld leeren 
-    this.aktualisiereListe(); /* Warum this.?! */
+    this.aktualisiereListe(); 
     console.log("Test2");
   };
 
