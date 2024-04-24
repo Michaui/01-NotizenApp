@@ -52,13 +52,13 @@ class ToDoList {
         li.classList.add('abgeschlossen');
       }
 
-      // Fügen Sie das Listenelement zum temporären Array hinzu
+      // Fügen Sie das Listenelement (li) zum temporären Array hinzu
       neueListe.push(li);
 
       //Füge allen li´s Methode abschliessenAufgabe() hinzu. 
       li.addEventListener('click', () => { /* WARUM IST HIER KEIN EVENT NOTWENDIG */
         //Methode wird aufgerufen und index wird als Argument mitgegeben. 
-        this.abschliessenAufgabe(index); /* FRAGE: Warum this */
+        this.abschliessenAufgabe(index); 
       });
 
       //Verschwindet, sobald ein Elenent erzeugt wurde
