@@ -22,8 +22,11 @@ class ToDoList {
     this.aufgabenForm.addEventListener('submit', (event) => {
       event.preventDefault(); //Verhindert, dass die Seite neu geladen wird. 
       /* this.hinzufuegenAufgabe weil Methode Teil der Klasse ist */
+      // @ts-ignore
       this.hinzufuegenAufgabe(thisaufgabenTitel.value, aufgabenBeschreibung.value); 
+      // @ts-ignore
       this.aufgabenTitel.value = ''; 
+      // @ts-ignore
       this.aufgabenBeschreibung.value = ''; 
       console.log("Test1");
     });
