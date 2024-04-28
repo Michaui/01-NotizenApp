@@ -13,8 +13,8 @@ let gemeinsameAufgaben = [];
 class ToDoList {
   constructor(){
     this.aufgabe = []; /*Wird hier deklariert, damit es innerhalb der Klasse zugänglich zu haben*/
-    this.aufgabenListe = document.getElementById('aufgabenListe');
     this.aufgabenForm = document.getElementById('aufgabenForm');
+    this.aufgabenListe = document.getElementById('aufgabenListe');
     this.aufgabenTitel = document.getElementById('aufgabenTitel');
     this.aufgabenBeschreibung = document.getElementById('aufgabenBeschreibung');
 
